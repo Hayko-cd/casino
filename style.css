@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout {
+  width: 100%;
+  height: 800px;
+  opacity: 1;
+  background-image: url(https://cdn-pl.totogaming.am/plat/prd/Img/Background/EGT/20SuperHot.png);
+}
+
+.black-opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-opacity-2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 900px;
+  height: 750px;
+  border-radius: 10px;
+  padding-inline: 1px;
+  background-image: url("https://t4.ftcdn.net/jpg/05/22/95/33/360_F_522953309_diWQ2HvXZ7n9E9TyBLUP3LhYcL7tMoWn.jpg");
+}
+
+@keyframes winBlock {
+  0% {
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    opacity: 0;
+  }
+
+  50% {
+    top: 0%;
+    left: 45%;
+    transform: translate(0%, 0%);
+    opacity: 0.6;
+  }
+
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.win-modal {
+  width: 500px;
+  height: 300px;
+  background-image: url("https://www.casino.org/vitalvegas/wp-content/uploads/2020/07/casino_royale_wof2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  box-shadow: 8px 0px 0px 0px gold, 0px 8px 0px 0px gold, -8px 0px 0px 0px white,
+    0px 0px 0px 8px white, 5px 5px 38px 5px rgba(255, 251, 0, 0);
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  left: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  position: absolute;
+  animation: winBlock 1.5s linear 0.3s forwards;
+  overflow: hidden;
+  border-radius: 30px;
+  opacity: 0;
+}
+
+.logo {
+  width: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes ajDzax {
+  from {
+    transform: translateX(-130%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
+}
+
+.text-price {
+  position: absolute;
+  animation: ajDzax 2s linear infinite;
+  -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+}
+
+.win-price {
+  width: 340px;
+  height: 50px;
+  border: 4px solid rgb(160, 142, 39);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-size: 40px;
+  color: rgba(160, 145, 10, 0.793);
+  font-weight: bold;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-inline: 50px;
+  width: 100%;
+  height: 60px;
+  margin-top: 1px;
+  border-radius: 10px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  width: 185px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.title-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.xach {
+  height: 100%;
+  padding: 6px;
+  border-right: 2px solid black;
+}
+
+.number {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.egt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13px;
+  height: 100%;
+  border-left: 1px solid black;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.superhot {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: orange;
+  text-transform: uppercase;
+  text-shadow: 7px 5px 11px rgba(255, 0, 0, 0.9);
+  -webkit-text-shadow: 7px 5px 11px rgba(255, 0, 0, 0.9);
+  -moz-text-shadow: 7px 5px 11px rgba(255, 0, 0, 0.9);
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 530px;
+}
+
+.static {
+  width: 60px;
+  height: 100%;
+  border: 3px solid rgb(234, 204, 35);
+  border-radius: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.static-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #01002a;
+  filter: drop-shadow(0 0 5px #4444dd);
+  border-radius: 50px;
+  position: relative;
+}
+
+.static-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #4444dd;
+  position: relative;
+}
+
+.num {
+  margin-right: 0 !important;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 28px !important;
+}
+
+.text-hard {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 25px;
+  color: orange;
+  font-weight: bold;
+  -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+  margin-right: 15px;
+}
+
+.last {
+  border-bottom: unset !important;
+}
+
+.static2 {
+  width: 180px;
+  overflow: hidden;
+  height: 100%;
+  border: 3px solid rgb(234, 204, 35);
+  border-radius: 8px;
+  padding: 4px;
+  background-color: #01002a;
+}
+
+@keyframes animacia {
+  from {
+    transform: translateY(-105%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.static-background-1,
+.static-background-3,
+.static-background-2,
+.static-background-4,
+.static-background-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  padding: 10px;
+  transform: translateY(-105%);
+}
+
+.fruit {
+  width: 100%;
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: black;
+  top: 210px;
+  right: -36px;
+  border-radius: 100%;
+  opacity: 0.9;
+  border: 2px solid silver;
+  overflow: hidden;
+}
+
+.rotate-icon {
+  width: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rotate-icon:hover {
+  transform: scale(1.3);
+}
+
+.bottom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  width: 100%;
+  height: 140px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.balance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.balance {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.balance-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+.balance-num {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.egt-sec {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 40px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  padding-inline: 30px;
+  background-color: rgb(39, 37, 37);
+  border-radius: 8px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  border: 1px solid white;
+}
+
+.price-text-size {
+  font-size: 20px !important;
+}
+
+.active {
+  background-color: rgb(66, 182, 66);
+}
+
+.price:hover {
+  background-color: rgb(66, 182, 66);
+}
+
+.sound-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  background-color: red;
+}
+
+.sound-icon {
+  width: 35px;
+  height: 35px;
+  transform: scale(1.5);
+  fill: white;
+  position: relative;
+  top: 10px;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.sound-icon:hover {
+  fill: greenyellow;
+}
+
+.sound-20-super-hot {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
